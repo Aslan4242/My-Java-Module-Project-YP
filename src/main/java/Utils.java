@@ -40,8 +40,8 @@ public class Utils {
     public static String formatPriceData(double price) {
         String formattedPrice = String.format(Locale.US, "%.2f ", price);
         String rubleWord;
-        int lastDigitInPrice = (int) (Math.abs(price) % 10); // последняя цифра
-        int preLastDigitInPrice = (int) (Math.abs(price) % 100 / 10); // предпоследняя цифра
+        int lastDigitInPrice = ((int) price) % 10; // последняя цифра
+        int preLastDigitInPrice = ((int) price) % 100 / 10; // предпоследняя цифра
         if (preLastDigitInPrice == 1) {
             rubleWord = "рублей";
         } else {
