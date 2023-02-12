@@ -4,8 +4,8 @@ import java.util.ArrayList;
  * Класс для описания блюда из меню
  */
 public class Dish {
-    String name;  // название блюда
-    double price; // стоимость блюда
+    String name;  // Название блюда
+    double price; // Стоимость блюда
 
     Dish(String name, double price) {
         this.name = name;
@@ -15,7 +15,7 @@ public class Dish {
     /**
      * Получает список блюд с их стоимостью и сохраняет их в список
      *
-     * @return ArrayList<Dish> Список блюда с их стоимостью
+     * @return ArrayList Список блюд с их стоимостью
      */
     public static ArrayList<Dish> getDishesList() {
         String stopCommand = "Завершить";
